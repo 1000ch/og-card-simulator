@@ -3,12 +3,13 @@
 const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+const helmet = require('helmet');
 
 const app = express();
-app.use(bodyParser.urlencoded({
-  extended : true
-}));
+app.use(bodyParser.urlencoded({ extended : true }));
 app.use(bodyParser.json());
+app.use(cookieParser());
 
 const CSS_PATH = path.resolve(__dirname, 'public/css');
 const JS_PATH = path.resolve(__dirname, 'public/js');
