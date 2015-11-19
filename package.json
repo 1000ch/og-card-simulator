@@ -1,0 +1,21 @@
+{
+  "name": "og-card-simulator",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1000ch/og-card-simulator.git"
+  },
+  "author": "1000ch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1000ch/og-card-simulator/issues"
+  },
+  "homepage": "https://github.com/1000ch/og-card-simulator#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "rog": "^1.0.1"
+  }
+}
