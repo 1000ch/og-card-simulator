@@ -10,6 +10,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended : true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
+app.use(helmet());
 
 const CSS_PATH = path.resolve(__dirname, 'public/css');
 const JS_PATH = path.resolve(__dirname, 'public/js');
