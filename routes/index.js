@@ -9,14 +9,16 @@ module.exports = (request, response) => {
                   <link rel="stylesheet" href="css/app.css">
                 </head>
                 <body>
-                  <h2>Show open graph card from URL</h2>
-                  <div>
-                    <textarea></textarea>
-                  </div>
-                  <h2>Card example</h2>
-                  <div class="post">
-                    <div class="content"></div>
-                    <div class="card-wrapper"></div>
+                  <div class="container">
+                    <h2>Show open graph card from URL</h2>
+                    <div class="input">
+                      <textarea></textarea>
+                    </div>
+                    <h2>Card example</h2>
+                    <div class="output">
+                      <div class="content"></div>
+                      <div class="card-wrapper"></div>
+                    </div>
                   </div>
                   <script src="js/app.js"></script>
                 </body>
