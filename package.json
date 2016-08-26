@@ -18,7 +18,7 @@
     "cookie-parser": "^1.4.0",
     "express": "^4.13.3",
     "helmet": "^2.1.0",
-    "rog": "^2.0.1",
+    "rog": "^2.1.1",
     "rog-plugin-description": "^1.0.0",
     "rog-plugin-image": "^1.0.0",
     "rog-plugin-title": "^1.0.1",
