@@ -3,7 +3,6 @@
 const URL = /(?:\w+:)?\/\/([^\s\.]+\.\S{2}|localhost[\:?\d]*)\S*/g;
 
 const linkify = string => {
-
   let matches = string.match(URL);
 
   if (!matches) {
@@ -22,7 +21,6 @@ const linkify = string => {
 };
 
 const fetchify = string => {
-
   let matches = URL.exec(string);
 
   if (!matches) {
@@ -30,7 +28,6 @@ const fetchify = string => {
   }
 
   if (matches.length !== 0) {
-
     let url = matches.shift();
     let cache = sessionStorage.getItem(url);
 
@@ -72,14 +69,12 @@ const createCard = data => {
 };
 
 window.onload = e => {
-
-  let textarea = document.querySelector('textarea');
-  let post = document.querySelector('.post');
-  let content = document.querySelector('.content');
-  let wrapper = document.querySelector('.card-wrapper');
+  const textarea = document.querySelector('textarea');
+  const post = document.querySelector('.post');
+  const content = document.querySelector('.content');
+  const wrapper = document.querySelector('.card-wrapper');
 
   textarea.addEventListener('input', () => {
-
     content.innerHTML = linkify(textarea.value);
 
     fetchify(textarea.value).then(data => {
