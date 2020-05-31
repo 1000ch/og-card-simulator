@@ -1,7 +1,9 @@
 {
   "name": "og-card-simulator",
+  "private": true,
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "xo"
   },
   "repository": {
     "type": "git",
@@ -17,11 +19,18 @@
     "body-parser": "^1.14.1",
     "cookie-parser": "^1.4.0",
     "express": "^4.13.3",
-    "helmet": "^2.1.0",
-    "rog": "^2.1.1",
-    "rog-plugin-description": "^1.0.0",
-    "rog-plugin-image": "^1.0.0",
-    "rog-plugin-title": "^1.0.1",
-    "rog-plugin-url": "^1.0.0"
+    "helmet": "^3.22.0",
+    "rog": "^4.0.0",
+    "rog-plugin-description": "^4.0.0",
+    "rog-plugin-image": "^4.0.0",
+    "rog-plugin-title": "^4.0.0",
+    "rog-plugin-url": "^4.0.0"
+  },
+  "devDependencies": {
+    "xo": "^0.30.0"
+  },
+  "xo": {
+    "space": 2,
+    "envs": ["node", "browser"]
   }
 }

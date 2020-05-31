@@ -1,13 +1,21 @@
-"use strict";
+'use strict';
+const {rog} = require('rog');
+const {rogUrl} = require('rog-plugin-url');
+const {rogTitle} = require('rog-plugin-title');
+const {rogImage} = require('rog-plugin-image');
+const {rogDescription} = require('rog-plugin-description');
 
-const rog = require('rog');
+module.exports = async (request, response) => {
+  try {
+    const data = await rog(request.body.url, {
+      url: rogUrl,
+      title: rogTitle,
+      image: rogImage,
+      description: rogDescription
+    });
 
-module.exports = (request, response) => {
-  rog(request.body.url, {}, {
-    url         : require('rog-plugin-url'),
-    title       : require('rog-plugin-title'),
-    image       : require('rog-plugin-image'),
-    description : require('rog-plugin-description')
-  }).then(data => response.json(data))
-    .catch(error => response.json(error));
+    response.json(data);
+  } catch (error) {
+    response.json(error);
+  }
 };

@@ -62,6 +62,7 @@ textarea:focus {
 
 .card img {
   margin-right: 10px;
+  object-fit: cover;
 }
 
 .card h2 {
