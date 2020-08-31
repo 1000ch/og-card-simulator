@@ -27,7 +27,7 @@
     "rog-plugin-url": "^4.0.0"
   },
   "devDependencies": {
-    "xo": "^0.33.0"
+    "xo": "^0.33.1"
   },
   "xo": {
     "space": 2,
