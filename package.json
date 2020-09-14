@@ -19,7 +19,7 @@
     "body-parser": "^1.14.1",
     "cookie-parser": "^1.4.0",
     "express": "^4.13.3",
-    "helmet": "^4.1.0",
+    "helmet": "^4.1.1",
     "rog": "^4.0.0",
     "rog-plugin-description": "^4.0.0",
     "rog-plugin-image": "^4.0.0",
