@@ -10,7 +10,7 @@ const linkify = string => {
 
   matches = matches.filter((url, i, array) => i === array.indexOf(url));
 
-  while (matches.length) {
+  while (matches.length > 0) {
     const url = matches.shift();
     const regexp = new RegExp(url, 'g');
     string = string.replace(regexp, `<a href="${url}">${url}</a>`);
