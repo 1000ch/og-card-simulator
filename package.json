@@ -24,7 +24,7 @@
     "rog-plugin-description": "^4.0.0",
     "rog-plugin-image": "^4.0.0",
     "rog-plugin-title": "^4.0.0",
-    "rog-plugin-url": "^4.0.0"
+    "rog-plugin-url": "^5.0.0"
   },
   "devDependencies": {
     "xo": "^0.38.2"
