@@ -21,7 +21,7 @@
     "express": "^4.13.3",
     "helmet": "^4.4.1",
     "rog": "^4.0.0",
-    "rog-plugin-description": "^4.0.0",
+    "rog-plugin-description": "^5.0.0",
     "rog-plugin-image": "^4.0.0",
     "rog-plugin-title": "^4.0.0",
     "rog-plugin-url": "^4.0.0"
