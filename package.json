@@ -1,21 +1,28 @@
 {
   "name": "og-card-simulator",
   "private": true,
-  "type": "module",
-  "scripts": {
-    "start": "node index.js",
-    "test": "xo"
+  "homepage": "https://github.com/1000ch/og-card-simulator#readme",
+  "bugs": {
+    "url": "https://github.com/1000ch/og-card-simulator/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/1000ch/og-card-simulator.git"
   },
-  "author": "1000ch",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/1000ch/og-card-simulator/issues"
+  "author": "1000ch",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "xo"
   },
-  "homepage": "https://github.com/1000ch/og-card-simulator#readme",
+  "xo": {
+    "envs": [
+      "node",
+      "browser"
+    ],
+    "space": 2
+  },
   "dependencies": {
     "cookie-parser": "^1.4.0",
     "express": "^4.13.3",
@@ -28,12 +35,5 @@
   },
   "devDependencies": {
     "xo": "^0.44.0"
-  },
-  "xo": {
-    "space": 2,
-    "envs": [
-      "node",
-      "browser"
-    ]
   }
 }
