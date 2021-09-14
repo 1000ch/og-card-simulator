@@ -1,4 +1,3 @@
-'use strict';
 const URL = /(?:\w+:)?\/\/([^\s.]+\.\S{2}|localhost[:?\d]*)\S*/g;
 
 const linkify = string => {
@@ -36,11 +35,11 @@ const fetchify = async string => {
   const response = await fetch('/api/og', {
     method: 'post',
     headers: {
-      'content-type': 'application/json'
+      'content-type': 'application/json',
     },
     body: JSON.stringify({
-      url
-    })
+      url,
+    }),
   });
 
   const data = await response.json();
@@ -48,18 +47,16 @@ const fetchify = async string => {
   return data;
 };
 
-const createCard = data => {
-  return `
-    <a href="${data.url}" target="_blank">
-      <div class="card">
-        <img width="100" height="100" src="${data.image}">
-        <div>
-          <h2>${data.title}</h2>
-          <p>${data.description}</p>
-        </div>
+const createCard = data => `
+  <a href="${data.url}" target="_blank">
+    <div class="card">
+      <img width="100" height="100" src="${data.image}">
+      <div>
+        <h2>${data.title}</h2>
+        <p>${data.description}</p>
       </div>
-    </a>`;
-};
+    </div>
+  </a>`;
 
 window.addEventListener('load', () => {
   const textarea = document.querySelector('textarea');

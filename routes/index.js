@@ -1,5 +1,4 @@
-'use strict';
-module.exports = (request, response) => {
+export default function index(request, response) {
   const html = `
     <!doctype html>
     <html>
@@ -25,4 +24,4 @@ module.exports = (request, response) => {
       </body>
     </html>`;
   response.send(html);
-};
+}
