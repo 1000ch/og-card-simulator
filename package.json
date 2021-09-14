@@ -1,6 +1,7 @@
 {
   "name": "og-card-simulator",
   "private": true,
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "xo"
@@ -16,18 +17,17 @@
   },
   "homepage": "https://github.com/1000ch/og-card-simulator#readme",
   "dependencies": {
-    "body-parser": "^1.14.1",
     "cookie-parser": "^1.4.0",
     "express": "^4.13.3",
     "helmet": "^4.4.1",
-    "rog": "^4.0.0",
-    "rog-plugin-description": "^4.0.0",
-    "rog-plugin-image": "^4.0.0",
-    "rog-plugin-title": "^4.0.0",
-    "rog-plugin-url": "^4.0.0"
+    "rog": "^5.0.0",
+    "rog-plugin-description": "^5.0.1",
+    "rog-plugin-image": "^5.0.1",
+    "rog-plugin-title": "^5.0.1",
+    "rog-plugin-url": "^5.0.1"
   },
   "devDependencies": {
-    "xo": "^0.38.2"
+    "xo": "^0.44.0"
   },
   "xo": {
     "space": 2,
