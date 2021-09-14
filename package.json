@@ -35,5 +35,8 @@
   },
   "devDependencies": {
     "xo": "^0.44.0"
+  },
+  "engines": {
+    "node": "16.4.1"
   }
 }
