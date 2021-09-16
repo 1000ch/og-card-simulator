@@ -1,48 +1,15 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background: #eee;
-  margin: 0;
-  padding: 10px;
+.container {
+  max-width: 640px;
 }
 
 textarea {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 16px;
-  height: 120px;
-  outline: none;
   width: 100%;
-  padding: 10px;
-}
-
-textarea:focus {
-  border-color: #ed3123;
-}
-
-.container {
-  margin: auto;
-  max-width: 480px;
-}
-
-.input {
-  margin: 10px;
 }
 
 .output {
   background-color: #fff;
   border: 1px solid #ddd;
   font-size: 20px;
-  margin: 10px;
-  padding: 10px;
-}
-
-.card {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  display: flex;
   margin: 10px;
   padding: 10px;
 }
@@ -58,6 +25,14 @@ textarea:focus {
 .card-wrapper a {
   color: #000;
   text-decoration: none;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
 }
 
 .card img {

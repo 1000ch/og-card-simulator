@@ -5,8 +5,9 @@ export default function index(request, response) {
       <head>
         <meta charset="utf-8">
         <title>og-card-simulator</title>
+        <link rel="stylesheet" href="https://1000ch.github.io/gh-pages.css/gh-pages.css">
         <link rel="stylesheet" href="css/app.css">
-        <script defer src="js/app.js"></script>
+        <script type="module" src="js/app.js"></script>
       </head>
       <body>
         <div class="container">
