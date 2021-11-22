@@ -24,7 +24,7 @@
     "space": 2
   },
   "dependencies": {
-    "cookie-parser": "^1.4.0",
+    "cookie-parser": "^1.4.6",
     "express": "^4.13.3",
     "helmet": "^4.4.1",
     "rog": "^5.0.0",
