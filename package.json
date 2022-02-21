@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "cookie-parser": "^1.4.0",
-    "express": "^4.13.3",
+    "express": "^4.17.3",
     "helmet": "^4.4.1",
     "rog": "^5.0.0",
     "rog-plugin-description": "^5.0.1",
