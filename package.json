@@ -34,7 +34,7 @@
     "rog-plugin-url": "^5.0.1"
   },
   "devDependencies": {
-    "xo": "^0.44.0"
+    "xo": "^0.50.0"
   },
   "engines": {
     "node": "16.4.1"
